@@ -1,0 +1,45 @@
+# Ignorar carpetas de Node.js (frontend y backend)
+/aplicacion-crud-frontend/node_modules
+/aplicacion-crud-backend/node_modules
+
+# Ignorar carpetas de compilación/distribución de Angular
+/aplicacion-crud-frontend/dist
+/aplicacion-crud-frontend/build
+
+# Ignorar la carpeta .angular del CLI de Angular
+/aplicacion-crud-frontend/.angular
+/aplicacion-crud-frontend/.cache
+
+# Ignorar archivos de entorno locales de Angular
+/aplicacion-crud-frontend/.env.local
+/aplicacion-crud-frontend/.env.development.local
+/aplicacion-crud-frontend/.env.test.local
+
+# Ignorar la carpeta vendor de Composer (backend - dependencias de PHP)
+/aplicacion-crud-backend/vendor
+
+# Ignorar archivos de caché de Laravel (backend)
+/aplicacion-crud-backend/bootstrap/cache/*
+
+# Ignorar archivos de entorno locales de Laravel (backend)
+/aplicacion-crud-backend/.env
+/aplicacion-crud-backend/.env.backup
+
+# Ignorar el contenido de storage/app (backend - archivos subidos por la aplicación)
+/aplicacion-crud-backend/storage/app/*
+!/aplicacion-crud-backend/storage/app/.gitignore # No ignorar el .gitignore dentro
+
+# Ignorar el contenido de storage/framework (backend - caché, sesiones, etc.)
+/aplicacion-crud-backend/storage/framework/*
+!/aplicacion-crud-backend/storage/framework/.gitignore # No ignorar el .gitignore dentro
+
+# Ignorar los logs de Laravel (backend)
+/aplicacion-crud-backend/storage/logs/*
+
+# Ignorar archivos e IDEs específicos
+.idea
+.vscode
+*.log
+*.swp
+*.swo
+*~
