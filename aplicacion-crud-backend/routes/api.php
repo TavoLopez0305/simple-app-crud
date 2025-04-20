@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\PotentialClientController;
@@ -20,9 +21,12 @@ use App\Http\Controllers\PotentialClientController;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Rutas para Autenticación
+Route::post('/login', [AuthController::class, 'login']);
+Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth:api');
+Route::post('/refresh', [AuthController::class, 'refresh'])->middleware('auth:api');
+Route::post('/me', [AuthController::class, 'me'])->middleware('auth:api');
+
 // Rutas para Citas
 Route::post('/crear/cita', [AppointmentController::class, 'store']);
 Route::get('/citas', [AppointmentController::class, 'index']);
@@ -41,4 +45,4 @@ Route::delete('/eliminar/cliente/{client}', [ClientController::class, 'destroy']
 Route::post('/registrar/potencial-cliente', [PotentialClientController::class, 'store']);
 Route::get('/potenciales-clientes', [PotentialClientController::class, 'index']);
 Route::get('/potencial-cliente/{potentialClient}', [PotentialClientController::class, 'show']);
-// Puedes agregar ruta
+// Puedes agregar rutas para editar y eliminar clientes potenciales si es necesario

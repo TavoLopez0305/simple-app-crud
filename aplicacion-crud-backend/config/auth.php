@@ -35,18 +35,18 @@ return [
     |
     */
 
-    'guards' => [
-        'web' => [
-            'driver' => 'session',
-            'provider' => 'users',
-        ],
-
-        'api' => [
-            'driver' => 'token',
-            'provider' => 'users',
-            'hash' => false,
-        ],
+'guards' => [
+    'web' => [
+        'driver' => 'session',
+        'provider' => 'users',
     ],
+
+    'api' => [
+        'driver' => 'jwt', // ¡Cambia 'token' a 'jwt'!
+        'provider' => 'users',
+        'hash' => false,
+    ],
+],
 
     /*
     |--------------------------------------------------------------------------
