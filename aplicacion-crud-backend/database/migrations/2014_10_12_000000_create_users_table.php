@@ -20,6 +20,8 @@ class CreateUsersTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
+            // Nueva columna para la clave foránea del rol
+            $table->foreignId('role_id')->constrained()->onDelete('restrict');
             $table->timestamps();
         });
     }
