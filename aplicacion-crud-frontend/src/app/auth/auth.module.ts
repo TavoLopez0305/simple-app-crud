@@ -1,33 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './components/login/login.component';
-import { AuthRoutingModule } from './auth-routing.module';
+import { AuthRoutingModule } from './auth-routing.module'; // Asume que AuthRoutingModule ya configura las rutas
 
-const routes: Routes = [
-  {
-    path: 'login',
-    component: LoginComponent
-  },
-  {
-    path: '',
-    redirectTo: 'login',
-    pathMatch: 'full'
-  }
-];
-
-@NgModule({ // ¡Asegúrate de que @NgModule esté aquí!
+@NgModule({
   declarations: [
     LoginComponent
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes),
-    AuthRoutingModule // Asegúrate de que AuthRoutingModule esté importado
-  ],
-  exports: [
-    AuthRoutingModule,
-    AuthModule // También puedes exportar el módulo si es necesario
+    AuthRoutingModule // Elimina RouterModule.forChild() si las rutas ya están en AuthRoutingModule
   ]
+  // ¡No exports AuthModule ni AuthRoutingModule a menos que sea estrictamente necesario!
 })
 export class AuthModule { }
