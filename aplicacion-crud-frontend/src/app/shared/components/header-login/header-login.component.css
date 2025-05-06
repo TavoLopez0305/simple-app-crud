@@ -1,0 +1,16 @@
+.menu nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    list-style: none;
+}
+.menu nav .btn{
+    color: white;
+    font-weight: bold;
+}
+.menu nav .btn:hover{
+    filter: brightness(80%); /* Ejemplo de oscurecimiento */
+    cursor: pointer; /* Opcional: cambia el cursor para indicar que es interactivo */
+}

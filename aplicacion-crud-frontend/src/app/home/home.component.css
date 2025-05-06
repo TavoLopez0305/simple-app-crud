@@ -1,0 +1,20 @@
+.fondo{
+    max-height: 350px;
+    max-width: 800px;
+    width: 100%;
+}
+.text{
+    color:#3E82E7 ;
+    font-weight: bolder;
+}
+.boton-primario{
+    background-image: linear-gradient(to right, #634AFF, #29ABE2);
+    color: white !important; /* Asegura que el texto sea blanco */
+    border: none !important; /* Elimina el borde del botón */
+}
+.boton-primario:hover{
+    filter: brightness(90%); /* Oscurece ligeramente al pasar el cursor */
+}
+.boton-primario:active{
+    filter: brightness(80%); /* Oscurece aún más al hacer clic */
+}

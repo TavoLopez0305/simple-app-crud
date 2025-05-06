@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, IMAGE_CONFIG } from '@angular/common';
 import { LoginComponent } from './components/login/login.component';
-import { AuthRoutingModule } from './auth-routing.module'; // Asume que AuthRoutingModule ya configura las rutas
+import { RegisterComponent } from './components/register/register.component';
+import { AuthRoutingModule } from './auth-routing.module';
 
 @NgModule({
   declarations: [
-    LoginComponent
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     CommonModule,

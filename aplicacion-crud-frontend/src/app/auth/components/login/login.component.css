@@ -1,0 +1,124 @@
+/* Estilos para el contenedor principal */
+.container {
+    max-width: 400px; /* Ajusta el ancho máximo según la imagen */
+    margin: 30px auto; /* Centra el formulario en la página con un margen superior */
+    padding: 20px;
+  }
+  
+  /* Estilos para el encabezado */
+  h2 {
+    color: #333; /* Color de texto oscuro */
+    text-align: center; /* Centra el texto */
+    margin-bottom: 15px; /* Espacio debajo del encabezado */
+    font-weight: bolder;
+  }
+  
+  /* Estilos para el párrafo */
+  p {
+    color: #777; /* Color de texto grisáceo */
+    text-align: center; /* Centra el texto */
+    margin-bottom: 20px; /* Espacio debajo del párrafo */
+    font-size: 0.9em; /* Tamaño de fuente ligeramente menor */
+  }
+  
+  /* Estilos para el grupo de formulario (label y input) */
+  .form-group {
+    margin-bottom: 15px; /* Espacio entre los grupos de formulario */
+  }
+  
+  label {
+    display: block; /* Hace que la etiqueta ocupe toda la línea */
+    color: #555; /* Color de texto ligeramente oscuro */
+    margin-bottom: 5px; /* Espacio debajo de la etiqueta */
+    font-size: 0.95em; /* Tamaño de fuente ligeramente mayor */
+    font-weight: bolder;
+
+  }
+  
+  /* Estilos para el contenedor del input con icono */
+  .input-group {
+    display: flex; /* Utiliza flexbox para alinear el input y el icono */
+    border: 1px solid #ccc; /* Borde del input */
+    border-radius: 5px; /* Bordes redondeados del input */
+    overflow: hidden; /* Asegura que los bordes redondeados se apliquen correctamente */
+  }
+  
+  /* Estilos para el input */
+  .form-control {
+    flex-grow: 1; /* El input ocupa el espacio restante */
+    padding: 10px;
+    border: none; /* Elimina el borde predeterminado del input */
+    font-size: 1em;
+  }
+  
+  .form-control::placeholder {
+    color: #bbb; /* Color del texto del placeholder */
+  }
+  
+  .form-control:focus {
+    outline: none; /* Elimina el contorno al enfocar */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra suave al enfocar */
+    border-color: #007bff; /* Color del borde al enfocar (opcional) */
+  }
+  
+  /* Estilos para el contenedor del icono */
+  .input-group-text {
+    background-color: #f8f9fa; /* Fondo claro para el icono */
+    color: #aaa; /* Color grisáceo para el icono */
+    border: none; /* Elimina el borde */
+    padding: 8px 10px;
+    display: flex; /* Centra el icono vertical y horizontalmente */
+    align-items: center;
+  }
+  
+  /* Estilos para el botón de Iniciar Sesión */
+  .btn-primary {
+    background-color:#634AFF ; /* Color morado similar al de la imagen */
+    color: white; /* Texto blanco */
+    padding: 10px 15px;
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    font-size: 1.1em;
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    display: block; /* Asegura que ocupe el ancho completo */
+  }
+  
+  .btn-primary:hover {
+    background-color: #563d7c; /* Color morado más oscuro al pasar por encima */
+  }
+  
+  .btn-block {
+    /* Ya aplicado en .btn-primary */
+  }
+  
+  /* Estilos para el enlace "¿Olvidaste tu contraseña?" */
+  .forgot-password {
+    display: block; /* Ocupa toda la línea para centrar el texto */
+    color: #007bff; /* Color azul */
+    text-align: center; /* Centra el texto */
+    margin-top: 10px; /* Espacio superior */
+    font-size: 1.2em;
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline; /* Subraya al pasar por encima */
+  }
+  
+  /* Estilos para el contenedor de "¿No tienes una cuenta?" */
+  .mt-3 {
+    margin-top: 15px !important; /* Espacio superior importante */
+    text-align: center; /* Centra el texto */
+    font-size: 1.2em;
+  }
+  
+  /* Estilos para el enlace "Regístrate aquí" */
+  .register-link {
+    color: #007bff; /* Color azul */
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+  }
+  
+  .register-link:hover {
+    text-decoration: underline; /* Subraya al pasar por encima */
+  }
